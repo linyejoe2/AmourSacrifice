@@ -44,6 +44,23 @@
       width: calc(100% + 100px);
       margin-left: -50px;
     }
+    img {  
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.navigation-bar-slideout__brand {  
+    height: 160px; /*can be anything*/
+    width: 160px; /*can be anything*/
+    position: relative;
+}
 
     body {
       background-color: #d8d8d8;
@@ -54,14 +71,27 @@
 
 <body>
   <div class="container">
-    <div id="titleGroup" class=" container" style="padding:0px 15px 50px 15px;margin-top: 70px;">
+
+    <div class="container" style="display: flex;justify-content: center;margin-top: 50px;">
+      <h1 role="banner" class="navigation-bar-slideout__brand">
+        <a href="https://shop.ichefpos.com/store/9GwiNwAR/ordering">
+          <img class="navigation-bar-slideout__brand-image d-none d-lg-block"
+            src="./css/logo.png">
+          <img class="navigation-bar-slideout__brand-image d-lg-none"
+            src="./css/logo.png">
+        </a>
+      </h1>
+    </div>
+
+    <div id="titleGroup" class=" container" style="padding:0px 15px 0px 15px;margin: 20px auto 40px auto;">
       <div class="row">
         <div class="col">
         </div>
-        <div class="col-md-8 ">
-          <h2 class="title w-100">
+        <div class="col-md-10 ">
+          <h3 class="w-100" style="text-align: center;">慢思Facebook粉絲團</h3>
+          <h4 class="title w-100">
             冬日限定套餐抽獎活動-抽獎條款及細則
-          </h2>
+          </h4>
         </div>
         <div class="col">
         </div>
@@ -71,7 +101,7 @@
     <div class="shadowbox" style="margin-bottom: 70px;padding-top: 20px;">
       <div class="container">
         <label>
-          <span style="font-size: 20px;  position: relative;left: -15px;bottom: 5px;">慢思Facebook粉絲團 活動抽獎注意事項與個資告知事項</span><br>
+          <!-- <span style="font-size: 20px;  position: relative;left: -15px;bottom: 5px;">慢思Facebook粉絲團 活動抽獎注意事項與個資告知事項</span><br> -->
           <span>①每個人（以Facebook帳號為準）僅限一次參加機會，回覆留言/分享即視為同意下述「個人資料蒐集、處理及運用告知事項」。</span><br>
           <span>②得獎者務必要在領獎截止日前兌換獎項，逾期回覆及資料提供不完整視同放棄，且本店不另行通知；如因網路或系統等技術上問題，致資料不完整或延誤者，仍視同放棄。若得獎人自願放棄中獎資格或有喪失中獎資格的情形，本店不另行網路公告，亦不再通知與遞補得獎。</span><br>
           <span>③如有任何因電腦、網路、電話、技術或其它不可歸責於本行之事由，而使參加者所寄出或登錄之資料有延遲、遺失、錯誤、無法辨識或毀損之情況，本店不負任何法律責任，參加者亦不得因此異議。</span><br>
